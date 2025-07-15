@@ -28,8 +28,12 @@ class TidyTable extends React.Component {
   }
 
   render() {
-    return (
-      <div id={this.props.id} ref="wrapper"></div>
+    return React.createElement(
+      'div',
+      {
+        ref: 'wrapper',
+        id: this.props.id
+      }
     );
   }
 }
