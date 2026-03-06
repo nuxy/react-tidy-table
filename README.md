@@ -1,6 +1,6 @@
 # React Tidy Table
 
-[![npm version](https://badge.fury.io/js/react-tidy-table.svg)](https://badge.fury.io/js/react-tidy-table) [![](https://img.shields.io/npm/dm/react-tidy-table)](https://www.npmjs.com/package/react-tidy-table) [![Install size](https://packagephobia.com/badge?p=react-tidy-table)](https://packagephobia.com/result?p=react-tidy-table) [![](https://img.shields.io/github/v/release/nuxy/react-tidy-table)](https://github.com/nuxy/react-tidy-table/releases)
+[![npm version](https://badge.fury.io/js/react-tidy-table.svg)](https://badge.fury.io/js/react-tidy-table) [![](https://img.shields.io/npm/dm/react-tidy-table)](https://www.npmjs.com/package/react-tidy-table) [![Install size](https://packagephobia.com/badge?p=react-tidy-table)](https://packagephobia.com/result?p=react-tidy-table) [![](https://img.shields.io/github/v/release/nuxy/react-tidy-table)](https://github.com/nuxy/react-tidy-table/releases) [![NO AI](https://raw.githubusercontent.com/nuxy/no-ai-badge/master/badge.svg)](https://github.com/nuxy/no-ai-badge)
 
 Create a HTML table that can be sorted, selected, and post-processed.
 
