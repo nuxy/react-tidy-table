@@ -1,6 +1,6 @@
-.babelrc
 .eslintrc
 .vscode
+babel.config.json
 ISSUE_TEMPLATE.md
 demo
 node_modules
