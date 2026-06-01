@@ -1,5 +1,5 @@
-import React     from 'react';
-import ReactDOM  from 'react-dom';
+import {createElement, useEffect} from 'react';
+import {createRoot}               from 'react-dom/client';
 import TidyTable from '../dist/react-tidy-table';
 
 const options = {
@@ -58,19 +58,11 @@ function doSomething5(menu) {
   menu.children[0].innerText = '- Select -';
 }
 
-class Demo extends React.Component {
-  constructor() {
-    super();
-    this.table = null;
-  }
-
-  render() {
-    return (
-      <React.Fragment>
-        <TidyTable settings={settings} options={options} />
-      </React.Fragment>
-    );
-  }
+const Demo = function() {
+  return (
+    <TidyTable settings={settings} options={options} />
+  );
 }
 
-ReactDOM.render(<Demo />, document.getElementById('main'));
+const root = createRoot(document.getElementById('main'));
+root.render(<Demo />);

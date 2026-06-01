@@ -10,42 +10,31 @@
 
 'use strict';
 
-import React     from 'react';
+import {createElement, useEffect, useRef} from 'react';
 import PropTypes from 'prop-types';
+import checkPropTypes from 'prop-types/checkPropTypes';
 import tidyTable from 'tidy-table';
 import 'tidy-table/dist/tidy-table.min.css';
 
 /**
  * Provides React Component wrapper.
  */
-class TidyTable extends React.Component {
-  componentDidMount() {
-    this.table = new tidyTable(
-      this.refs.wrapper,
-      this.props.settings,
-      this.props.options
-    );
-  }
+export default function TidyTable(props) {
+  const ref = useRef('wrapper');
 
-  render() {
-    return React.createElement(
-      'div',
-      {
-        ref: 'wrapper',
-        id: this.props.id
-      }
-    );
-  }
+  checkPropTypes(TidyTable.propTypes, props);
+
+  const {id = 'tidy-table', settings, options} = props;
+
+  useEffect(() => {
+    new tidyTable(ref.current, settings, options);
+  }, []);
+
+  return createElement('div', {ref, id});
 }
-
-TidyTable.defaultProps = {
-  id: 'tidy-table'
-};
 
 TidyTable.propTypes = {
   id: PropTypes.string,
   settings: PropTypes.object,
   options: PropTypes.object
 };
-
-export default TidyTable;
