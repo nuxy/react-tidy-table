@@ -31,7 +31,6 @@ Add to an existing [React](https://reactjs.org) project using [YARN](https://yar
 ## Usage
 
 ```javascript
-import React     from 'react';
 import TidyTable from 'react-tidy-table'; // or '../dist/react-tidy-table';
 
 const options = {
@@ -73,18 +72,10 @@ const settings = {
   }
 };
 
-export default class Demo extends React.Component {
-  constructor() {
-    super();
-  }
-
-  render() {
-    return (
-      <React.Fragment>
-        <TidyTable settings={settings} options={options} />
-      </React.Fragment>
-    );
-  }
+export default function Demo() {
+  return (
+    <TidyTable settings={settings} options={options} />
+  );
 };
 ```
 
