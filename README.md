@@ -14,7 +14,6 @@ Create a HTML table that can be sorted, selected, and post-processed.
 - Easy to set-up and customize.
 - Customizable callback functions for post-processing selected results.
 - Post-process options for manipulating table/column/menu elements.
-- Fast and lightweight (JavaScript plug-in *only 4 kB)
 
 Checkout the [demo](https://nuxy.github.io/tidy-table) for examples of use.
 
@@ -26,7 +25,13 @@ Checkout the [demo](https://nuxy.github.io/tidy-table) for examples of use.
 
 Add to an existing [React](https://reactjs.org) project using [YARN](https://yarnpkg.com).
 
+### React [v19](https://react.dev)
+
     $ yarn add react-tidy-table
+
+### React [v18](https://18.react.dev)
+
+    $ yarn add react-tidy-table@0.2
 
 ## Usage
 
