@@ -1,6 +1,6 @@
 .vscode
 babel.config.json
+demo
 eslint.config.js
 ISSUE_TEMPLATE.md
-demo
-node_modules
+package.*
