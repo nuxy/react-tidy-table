@@ -1,5 +1,4 @@
-import {createElement, useEffect} from 'react';
-import {createRoot}               from 'react-dom/client';
+import {createRoot} from 'react-dom/client';
 import TidyTable from '../dist/react-tidy-table';
 
 const options = {
