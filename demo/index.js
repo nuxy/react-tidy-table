@@ -61,7 +61,7 @@ const Demo = function() {
   return (
     <TidyTable settings={settings} options={options} />
   );
-}
+};
 
 const root = createRoot(document.getElementById('main'));
 root.render(<Demo />);
